@@ -18,7 +18,7 @@ public class WhitePedestalBlock extends Block {
     public static final BlockEntityType<WhitePedestalBlockEntity> BLOCK_ENTITY_TYPE = 
         Registry.register(Registries.BLOCK_ENTITY_TYPE, 
             new Identifier(RitualMod.MOD_ID, "white_pedestal"),
-            BlockEntityType.Builder.create(WhitePedestalBlockEntity::new, null).build(null));
+            BlockEntityType.Builder.create(WhitePedestalBlockEntity::new, com.example.ritual.RitualMod.WHITE_PEDESTAL).build(null));
     
     public WhitePedestalBlock(Settings settings) {
         super(settings);
