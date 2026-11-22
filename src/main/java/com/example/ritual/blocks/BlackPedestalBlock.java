@@ -19,7 +19,7 @@ public class BlackPedestalBlock extends Block {
     public static final BlockEntityType<BlackPedestalBlockEntity> BLOCK_ENTITY_TYPE = 
         Registry.register(Registries.BLOCK_ENTITY_TYPE, 
             new Identifier(RitualMod.MOD_ID, "black_pedestal"),
-            BlockEntityType.Builder.create(BlackPedestalBlockEntity::new, null).build(null));
+            BlockEntityType.Builder.create(BlackPedestalBlockEntity::new, com.example.ritual.RitualMod.BLACK_PEDESTAL).build(null));
     
     public BlackPedestalBlock(Settings settings) {
         super(settings);
