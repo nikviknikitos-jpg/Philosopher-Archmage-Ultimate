@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "ritual",
+  "version": "${version}",
+  "name": "Philosopher's Stone: Rituals & Magic",
+  "description": "A comprehensive magic mod with 30 rituals, 10 spell tomes, skill tree and familiars",
+  "authors": [
+    "Qwen"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ritual/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.ritual.RitualMod"
+    ],
+    "client": [
+      "com.example.ritual.client.RitualClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
