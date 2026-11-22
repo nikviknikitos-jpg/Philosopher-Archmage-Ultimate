@@ -1,4 +1,7 @@
 package com.example.ritual.client;
+import com.example.ritual.client.screens.SpellWheelScreen;
+import com.example.ritual.client.screens.SkillTreeScreen;
+import com.example.ritual.client.hud.ManaBarRenderer; // если файл лежит в папке render, напиши .render.ManaBarRenderer
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
