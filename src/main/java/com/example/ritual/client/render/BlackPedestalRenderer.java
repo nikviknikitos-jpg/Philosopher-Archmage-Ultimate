@@ -26,7 +26,7 @@ public class BlackPedestalRenderer implements BlockEntityRenderer<BlackPedestalB
             float rotation = entity.getRotation() + tickDelta * 2.0f;
             matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(rotation));
             matrices.scale(0.75f, 0.75f, 0.75f);
-            itemRenderer.renderItem(item, net.minecraft.client.render.model.ModelTransformationMode.FIXED, 
+            itemRenderer.renderItem(item, net.minecraft.client.render.model.json.ModelTransformationMode.FIXED, 
                                    light, overlay, matrices, vertexConsumers, null, 0);
             matrices.pop();
         }
