@@ -86,13 +86,18 @@ public class SpellWheelScreen extends Screen {
     
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        renderBackground(context, 0, 0, width, height, 0x80000000);
+        this.renderBackground(context);
         
         int centerX = width / 2;
         int centerY = height / 2;
         
         // Draw circle outline
-        context.drawCircle(centerX, centerY, 90, 0x40FFFFFF);
+        for (int i = 0; i < 360; i += 2) {
+    double rad = Math.toRadians(i);
+    int cx = centerX + (int) (Math.cos(rad) * 90);
+    int cy = centerY + (int) (Math.sin(rad) * 90);
+    context.fill(cx, cy, cx + 2, cy + 2, 0x40FFFFFF);
+}
         
         super.render(context, mouseX, mouseY, delta);
         
